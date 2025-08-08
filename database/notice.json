@@ -1,3 +1,15 @@
 {
-    "notices": []
+    "notices": [
+        {
+            "date": "2025-08-08",
+            "title": "sample notice content",
+            "files": [
+                {
+                    "file_name": "Sample Notice Content",
+                    "file_type": "pdf",
+                    "file_path": "notice/20250808-Sample_notice_content/Sample.pdf"
+                }
+            ]
+        }
+    ]
 }
