@@ -43,6 +43,9 @@ if os.path.isdir(others_dir):
     with open(others_json_path, 'w') as f:
         json.dump(others_dict, f, indent=4)
 
+import os
+import json
+
 notice_json_path = os.path.join(output_dir, 'notice.json')
 notices = []
 notice_dir = 'notice'
@@ -54,30 +57,34 @@ for folder_name in os.listdir(notice_dir):
         formatted_date = f"{date_part[:4]}-{date_part[4:6]}-{date_part[6:]}"
         raw_title = title_part.replace('_', ' ').strip()
         title_lower = raw_title.lower()
-        title_title_case = raw_title.title()
+        title_capitalized = raw_title.capitalize()  # Only first letter capitalized
 
         file_entries = []
         for file in os.listdir(folder_path):
             file_path = os.path.join(folder_path, file)
             if os.path.isfile(file_path):
                 ext = os.path.splitext(file)[1].lstrip('.').lower()
+                file_name_without_ext = os.path.splitext(file)[0]
                 relative_path = os.path.join('notice', folder_name, file).replace('\\', '/')
                 file_entries.append({
-                    "file_name": title_title_case,
+                    "file_name": file_name_without_ext,
                     "file_type": ext,
                     "file_path": relative_path
                 })
 
         if file_entries:
+            notice_id = title_lower.replace(' ', '-')
             notice = {
+                "id": notice_id,
                 "date": formatted_date,
-                "title": title_lower,
+                "title": title_capitalized,
                 "files": file_entries
             }
             notices.append(notice)
 
 with open(notice_json_path, 'w', encoding='utf-8') as f:
     json.dump({"notices": notices}, f, indent=4)
+
 
 version_file = os.path.join(output_dir, 'version.json')
 

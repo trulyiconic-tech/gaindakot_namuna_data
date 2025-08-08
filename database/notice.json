@@ -1,11 +1,12 @@
 {
     "notices": [
         {
+            "id": "sample-notice-content",
             "date": "2025-08-08",
-            "title": "sample notice content",
+            "title": "Sample notice content",
             "files": [
                 {
-                    "file_name": "Sample Notice Content",
+                    "file_name": "Sample",
                     "file_type": "pdf",
                     "file_path": "notice/20250808-Sample_notice_content/Sample.pdf"
                 }
