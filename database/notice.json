@@ -1,14 +1,14 @@
 {
     "notices": [
         {
-            "id": "sample-notice-content",
+            "id": "bbs-curriculum-&-syllabus-document",
             "date": "2025-08-08",
-            "title": "Sample notice content",
+            "title": "Bbs curriculum & syllabus document",
             "files": [
                 {
-                    "file_name": "Sample",
+                    "file_name": "BBS Curriculum",
                     "file_type": "pdf",
-                    "file_path": "notice/20250808-Sample_notice_content/Sample.pdf"
+                    "file_path": "notice/20250808-BBS_Curriculum_&_Syllabus_document/BBS Curriculum.pdf"
                 }
             ]
         }
