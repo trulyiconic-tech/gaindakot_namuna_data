@@ -4,10 +4,14 @@
             "media/bbs/bbs_image.jpg",
             "media/bbs/bbs_image_s.jpg"
         ],
-        "kids": [],
+        "kids": [
+            "media/kids/faculty_kids.jpg"
+        ],
         "plustwo": [
             "media/plustwo/namuna_chemistry.jpg"
         ],
-        "school": []
+        "school": [
+            "media/school/namuna_overboarding.jpg"
+        ]
     }
 }
