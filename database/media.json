@@ -1,0 +1,13 @@
+{
+    "images": {
+        "bbs": [
+            "media/bbs/bbs_image.jpg",
+            "media/bbs/bbs_image_s.jpg"
+        ],
+        "kids": [],
+        "plustwo": [
+            "media/plustwo/namuna_chemistry.jpg"
+        ],
+        "school": []
+    }
+}
